@@ -1,47 +1,68 @@
 body{
-background:#0f0f0f;
-color:#33ff33;
-font-family:monospace;
 margin:0;
+background:#0b0b0b;
+color:white;
+font-family:Georgia, serif;
+overflow-x:hidden;
 }
 
-.desktop{
+.hero{
 height:100vh;
 display:flex;
 flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
-.topbar{
-background:#1f1f1f;
-padding:10px;
-color:white;
+.title{
+font-size:60px;
+color:#f0d878;
+text-shadow:0 0 20px gold;
 }
 
-.terminal{
-flex:1;
-padding:20px;
-overflow-y:auto;
+.subtitle{
+opacity:0.8;
 }
 
-.prompt{
-color:#00ffcc;
-margin-right:5px;
-}
-
-input{
-background:transparent;
+button{
+margin-top:30px;
+padding:12px 30px;
+background:gold;
 border:none;
-color:#33ff33;
-font-family:monospace;
-font-size:16px;
-outline:none;
+font-size:18px;
+cursor:pointer;
+border-radius:6px;
+}
+
+.book{
+display:none;
+margin:100px auto;
 width:80%;
+display:flex;
+gap:40px;
+perspective:1000px;
 }
 
-.cmd{
-color:#ffcc00;
+.page{
+background:#1e1e1e;
+padding:40px;
+width:250px;
+transform:rotateY(-20deg);
+transition:0.4s;
+border-radius:10px;
 }
 
-.output-line{
-margin-top:5px;
+.page:hover{
+transform:rotateY(0deg) scale(1.1);
+}
+
+.voldemort{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#330000;
+padding:20px;
+border-radius:10px;
+display:none;
 }
